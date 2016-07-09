@@ -1,0 +1,74 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="7" name="allObjects">
+    <object class="IBCarbonWindow" id="166">
+      <string name="windowRect">192 121 540 544 </string>
+      <string name="title">Preferences</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="167">
+        <string name="bounds">0 0 348 423 </string>
+        <array count="2" name="subviews">
+          <object class="IBCarbonGroupBox" id="180">
+            <string name="bounds">8 20 161 403 </string>
+            <string name="title">Assembly</string>
+          </object>
+          <object class="IBCarbonGroupBox" id="181">
+            <string name="bounds">169 20 328 403 </string>
+            <array count="3" name="subviews">
+              <object class="IBCarbonCheckBox" id="182">
+                <string name="bounds">197 36 215 193 </string>
+                <ostype name="controlSignature">pref</ostype>
+                <int name="controlID">1</int>
+                <string name="title">Use Labeled Branches</string>
+              </object>
+              <object class="IBCarbonCheckBox" id="183">
+                <string name="bounds">219 36 237 284 </string>
+                <ostype name="controlSignature">pref</ostype>
+                <int name="controlID">2</int>
+                <string name="title">Write Commented Procedure Names</string>
+              </object>
+              <object class="IBCarbonCheckBox" id="184">
+                <string name="bounds">241 36 259 306 </string>
+                <ostype name="controlSignature">pref</ostype>
+                <int name="controlID">3</int>
+                <string name="title">Speedier Branch Sorting (More Memory)</string>
+              </object>
+            </array>
+            <string name="title">Disassembly</string>
+          </object>
+        </array>
+      </object>
+      <boolean name="hasCollapseBox">FALSE</boolean>
+      <boolean name="hasHorizontalZoom">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="hasVerticalZoom">FALSE</boolean>
+      <int name="themeBrush">1</int>
+      <int name="windowPosition">1</int>
+    </object>
+    <reference idRef="167"/>
+    <reference idRef="180"/>
+    <reference idRef="181"/>
+    <reference idRef="182"/>
+    <reference idRef="183"/>
+    <reference idRef="184"/>
+  </array>
+  <array count="7" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="166"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="181"/>
+    <reference idRef="181"/>
+    <reference idRef="181"/>
+  </array>
+  <dictionary count="2" name="nameTable">
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>PreferencesWindow</string>
+    <reference idRef="166"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">185</unsigned_int>
+</object>

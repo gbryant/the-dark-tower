@@ -1,0 +1,75 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="7" name="allObjects">
+    <object class="IBCarbonWindow" id="180">
+      <string name="windowRect">257 296 388 747 </string>
+      <string name="title">Window</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="183">
+        <string name="bounds">0 0 131 451 </string>
+        <array count="5" name="subviews">
+          <object class="IBCarbonButton" id="185">
+            <string name="bounds">91 349 111 431 </string>
+            <ostype name="controlSignature">asks</ostype>
+            <int name="controlID">3</int>
+            <string name="title">Save</string>
+            <int name="buttonType">1</int>
+          </object>
+          <object class="IBCarbonButton" id="181">
+            <string name="bounds">91 104 111 210 </string>
+            <ostype name="controlSignature">asks</ostype>
+            <int name="controlID">1</int>
+            <string name="title">Don&apos;t Save</string>
+          </object>
+          <object class="IBCarbonButton" id="184">
+            <string name="bounds">91 255 111 337 </string>
+            <ostype name="controlSignature">asks</ostype>
+            <int name="controlID">2</int>
+            <string name="title">Cancel</string>
+            <int name="buttonType">2</int>
+          </object>
+          <object class="IBCarbonStaticText" id="182">
+            <string name="bounds">20 105 52 431 </string>
+            <string name="title">Do you want to save the changes made to this document?</string>
+          </object>
+          <object class="IBCarbonPicture" id="186">
+            <string name="bounds">20 36 68 84 </string>
+            <int name="contentResID">128</int>
+          </object>
+        </array>
+      </object>
+      <boolean name="hasCloseBox">FALSE</boolean>
+      <boolean name="hasCollapseBox">FALSE</boolean>
+      <boolean name="hasHorizontalZoom">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="hasVerticalZoom">FALSE</boolean>
+      <int name="carbonWindowClass">11</int>
+      <int name="themeBrush">53</int>
+    </object>
+    <reference idRef="181"/>
+    <reference idRef="182"/>
+    <reference idRef="183"/>
+    <reference idRef="184"/>
+    <reference idRef="185"/>
+    <reference idRef="186"/>
+  </array>
+  <array count="7" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="183"/>
+    <reference idRef="183"/>
+    <reference idRef="180"/>
+    <reference idRef="183"/>
+    <reference idRef="183"/>
+    <reference idRef="183"/>
+  </array>
+  <dictionary count="2" name="nameTable">
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>SaveChangesWindow</string>
+    <reference idRef="180"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">187</unsigned_int>
+</object>

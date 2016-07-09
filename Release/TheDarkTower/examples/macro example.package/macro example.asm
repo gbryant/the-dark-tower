@@ -1,0 +1,1 @@
+@Define start{mflr		r0stw			r0,8(r1)stwu		r1,-56(r1)}@Define end{la			r1,56(r1)lwz			r0,8(r1)mtlr		r0blr}@Define nothing{nop}@main_start_nothing_end@Import CarbonLib{Debugger}

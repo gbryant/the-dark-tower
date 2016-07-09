@@ -1,0 +1,1 @@
+# The Dark Tower Key File@Target			"cfrg"@Assembly		"main.asm"@Relocation		"basic app.reloc"@Resource		"basic app.rsrc"@SecOff{$00000000:main$00000000:init$00000000:term}@Product		"basic app"@Type			"APPL"@Creator		"????"

@@ -1,0 +1,248 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="35" name="allObjects">
+    <object class="IBCarbonWindow" id="166">
+      <string name="windowRect">91 80 558 637 </string>
+      <string name="title">Relocation Editor</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="167">
+        <string name="bounds">0 0 467 557 </string>
+        <array count="5" name="subviews">
+          <object class="IBCarbonDBListView" id="180">
+            <string name="bounds">107 20 447 537 </string>
+            <ostype name="controlSignature">rloc</ostype>
+            <int name="controlID">1</int>
+            <int name="hiliteStyle">1</int>
+            <boolean name="variableWidthColumns">FALSE</boolean>
+            <boolean name="horzScrollBar">FALSE</boolean>
+            <int name="selectionFlags">8</int>
+          </object>
+          <object class="IBCarbonButton" id="183">
+            <string name="bounds">35 181 55 251 </string>
+            <ostype name="controlSignature">rloc</ostype>
+            <int name="controlID">2</int>
+            <string name="title">Add</string>
+          </object>
+          <object class="IBCarbonButton" id="184">
+            <string name="bounds">35 287 55 357 </string>
+            <ostype name="controlSignature">rloc</ostype>
+            <int name="controlID">3</int>
+            <string name="title">Delete</string>
+          </object>
+          <object class="IBCarbonStaticText" id="214">
+            <string name="bounds">83 23 99 88 </string>
+            <ostype name="controlSignature">rloc</ostype>
+            <int name="controlID">4</int>
+            <string name="title">Message:</string>
+          </object>
+          <object class="IBCarbonStaticText" id="215">
+            <string name="bounds">83 91 99 532 </string>
+            <ostype name="controlSignature">rloc</ostype>
+            <int name="controlID">5</int>
+          </object>
+        </array>
+      </object>
+      <boolean name="hasHorizontalZoom">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="hasVerticalZoom">FALSE</boolean>
+      <int name="themeBrush">1</int>
+      <int name="windowPosition">1</int>
+    </object>
+    <reference idRef="167"/>
+    <reference idRef="180"/>
+    <reference idRef="183"/>
+    <reference idRef="184"/>
+    <object class="IBCarbonMenuItem" id="185">
+      <string name="title">DELT RelocIncrPosition</string>
+      <string name="helpTagText">This instruction increments relocAddress by offset bytes. The value of offset is&#13;treated as an unsigned value.</string>
+    </object>
+    <object class="IBCarbonMenuItem" id="186">
+      <string name="title">DATA RelocBySectD</string>
+      <string name="helpTagText">Add the value in the variable sectionD to the&#13;next runLength contiguous 4-byte items (words).</string>
+    </object>
+    <object class="IBCarbonMenuItem" id="187">
+      <string name="title">DDAT RelocBySectDWithSkip</string>
+      <string name="helpTagText">This instruction first increments relocAddress by skipCount * 4 bytes. It then&#13;adds the value of sectionD to the next relocCount contiguous words. After the&#13;instruction is executed, relocAddress points just past the last modified word.</string>
+    </object>
+    <object class="IBCarbonMenuItem" id="188">
+      <boolean name="disabled">TRUE</boolean>
+      <string name="title">RelocRun Group</string>
+    </object>
+    <object class="IBCarbonMenuItem" id="189">
+      <string name="title">LRPT RelocLgRepeat</string>
+      <string name="helpTagText">This instruction repeats the preceding blockCount relocation blocks repeatCount&#13;number of times. The RelocLgRepeat instruction is very similar to the&#13;relocSmRepeat (opcode 1001) instruction, but it allows for larger repeat counts.&#13;You cannot nest this instruction, either within itself or within the relocSmRepeat&#13;instruction.</string>
+    </object>
+    <object class="IBCarbonMenuItem" id="190">
+      <boolean name="separator">TRUE</boolean>
+    </object>
+    <object class="IBCarbonMenu" id="191">
+      <string name="title">Menu</string>
+      <array count="27" name="items">
+        <object class="IBCarbonMenuItem" id="192">
+          <string name="title">Select...</string>
+        </object>
+        <reference idRef="190"/>
+        <reference idRef="187"/>
+        <object class="IBCarbonMenuItem" id="193">
+          <boolean name="separator">TRUE</boolean>
+        </object>
+        <reference idRef="188"/>
+        <object class="IBCarbonMenuItem" id="210">
+          <string name="title">CODE RelocBySectC</string>
+          <string name="helpTagText">Add the value in the variable sectionC to the&#13;next runLength contiguous 4-byte items (words).</string>
+        </object>
+        <reference idRef="186"/>
+        <object class="IBCarbonMenuItem" id="194">
+          <string name="title">DESC RelocTVector12</string>
+          <string name="helpTagText">Add values to runLength 12-byte items as&#13;follows: add the value in sectionC to the first&#13;word and the value in sectionD to the second&#13;word. No value is added to the third word.</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="200">
+          <string name="title">DSC2 RelocTVector8</string>
+          <string name="helpTagText">Add values to runLength 8-byte items as follows:&#13;add the value in sectionC to the first word and&#13;the value in sectionD to the second word.</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="208">
+          <string name="title">VTBL RelocVTable8</string>
+          <string name="helpTagText">Add values to runLength 8-byte items as follows:&#13;add the value in sectionD to the first word and&#13;do not add any value to the second word.</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="211">
+          <string name="title">SYMR RelocImportRun</string>
+          <string name="helpTagText">Add the addresses of a sequence of imported&#13;symbols to the next runLength contiguous 4-byte&#13;items (words). The importIndex variable is&#13;incremented by 1 after every 4-byte relocation&#13;(runLength times total).</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="198">
+          <boolean name="separator">TRUE</boolean>
+        </object>
+        <object class="IBCarbonMenuItem" id="202">
+          <boolean name="disabled">TRUE</boolean>
+          <string name="title">RelocSmIndex Group</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="195">
+          <string name="title">SYMB RelocSmByImport</string>
+          <string name="helpTagText">Add the address of the imported&#13;symbol whose index is held in index to&#13;the word pointed to by relocAddress.&#13;After the addition, relocAddress points&#13;to just past the modified word, and&#13;importIndex is set to index +1.</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="207">
+          <string name="title">CDIS RelocSmSetSectC</string>
+          <string name="helpTagText">Set the variable sectionC to the&#13;memory address of the instantiated&#13;section specified by index.</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="197">
+          <string name="title">DTIS RelocSmSetSectD</string>
+          <string name="helpTagText">Set the variable sectionD to the&#13;memory address of the instantiated&#13;section specified by index.</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="204">
+          <string name="title">SECN RelocSmBySection</string>
+          <string name="helpTagText">&#13;Add the address of the instantiated&#13;section specified by index to the word&#13;pointed to by relocAddress. After&#13;execution, relocAddress points to just&#13;past the modified word.</string>
+        </object>
+        <reference idRef="185"/>
+        <object class="IBCarbonMenuItem" id="196">
+          <string name="title">RPT RelocSmRepeat</string>
+          <string name="helpTagText">This instruction repeats the preceding blockCount relocation blocks repeatCount&#13;number of times. Note that you cannot nest this instruction within itself or&#13;within the RelocLgRepeat instruction.</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="203">
+          <string name="title">LABS RelocSetPosition</string>
+          <string name="helpTagText">This instruction sets relocAddress to the address of the section offset offset.</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="201">
+          <string name="title">LSYM RelocLgByImport</string>
+          <string name="helpTagText">This instruction adds the address of the imported symbol whose index is held&#13;in index to the word pointed to by relocAddress. After the addition, relocAddress&#13;points to just past the modified word, and importIndex is set to index +1.</string>
+        </object>
+        <reference idRef="189"/>
+        <object class="IBCarbonMenuItem" id="199">
+          <boolean name="separator">TRUE</boolean>
+        </object>
+        <object class="IBCarbonMenuItem" id="212">
+          <boolean name="disabled">TRUE</boolean>
+          <string name="title">RelocLgSetOrBySection Group</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="205">
+          <string name="title">LSEC 0 RelocLgBySection&#10;</string>
+          <string name="helpTagText">Add the address of the instantiated section specified&#13;by index to the word at relocAddress. After the&#13;addition, relocAddress points to just past the&#13;modified word. (Same as RelocSmBySection.)</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="209">
+          <string name="title">LSEC 1 RelocLgSetSectC&#10;</string>
+          <string name="helpTagText">Set the variable sectionC to the memory address of&#13;the instantiated section specified by index. (Same as&#13;RelocSmSetSectC.)</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="206">
+          <string name="title">LSEC 2 RelocLgSetSectD</string>
+          <string name="helpTagText">Set the variable sectionD to the memory address of&#13;the instantiated section specified by index. (Same as&#13;RelocSmSetSectD.)</string>
+        </object>
+      </array>
+    </object>
+    <reference idRef="192"/>
+    <reference idRef="193"/>
+    <reference idRef="194"/>
+    <reference idRef="195"/>
+    <reference idRef="196"/>
+    <reference idRef="197"/>
+    <reference idRef="198"/>
+    <reference idRef="199"/>
+    <reference idRef="200"/>
+    <reference idRef="201"/>
+    <reference idRef="202"/>
+    <reference idRef="203"/>
+    <reference idRef="204"/>
+    <reference idRef="205"/>
+    <reference idRef="206"/>
+    <reference idRef="207"/>
+    <reference idRef="208"/>
+    <reference idRef="209"/>
+    <reference idRef="210"/>
+    <reference idRef="211"/>
+    <reference idRef="212"/>
+    <reference idRef="214"/>
+    <reference idRef="215"/>
+  </array>
+  <array count="35" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="166"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="1"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="191"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+  </array>
+  <dictionary count="6" name="nameTable">
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>IBCarbonMenuItem</string>
+    <reference idRef="188"/>
+    <string>IBCarbonMenuItem1</string>
+    <reference idRef="210"/>
+    <string>ListView</string>
+    <reference idRef="180"/>
+    <string>RelocationEditor</string>
+    <reference idRef="166"/>
+    <string>RelocationOpcodes</string>
+    <reference idRef="191"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">216</unsigned_int>
+</object>

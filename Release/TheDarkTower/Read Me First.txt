@@ -1,0 +1,27 @@
+ --------------|The Dark Tower| --------------
+
+I need to update the manual!
+
+Editing of the hex column in the code browser is new in this release.  Next releases will expand the editing capabilities.
+
+
+
+old news:
+------------------------------------------------------------------------------------------
+Code Browser Additions:
+
+search field: 	return to search forwards, shift+return to search backwards
+		mnemonic searches can include multiple mnemonics seperated by /
+		example: mflr/stw/stwu
+		other search types just search for a single term at this time.
+
+clone window button: open multiple views into the code.
+
+goto field: go to that specific address.
+------------------------------------------------------------------------------------------
+
+
+
+
+
+As always, please let me know what you would like to see in a future release.		ThDrkTwr@earthlink.nethttp://home.earthlink.net/~iu19/thedarktower/
